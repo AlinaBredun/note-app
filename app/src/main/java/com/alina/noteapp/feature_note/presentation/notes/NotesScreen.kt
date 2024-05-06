@@ -69,7 +69,7 @@ fun NotesScreen(
                     .padding(16.dp)
             ) {
                 Row(
-                    modifier = Modifier.fillMaxSize(),
+                    modifier = Modifier.fillMaxWidth(),
                     horizontalArrangement = Arrangement.SpaceBetween,
                     verticalAlignment = Alignment.CenterVertically
                 ) {
@@ -95,7 +95,7 @@ fun NotesScreen(
                 ) {
                     OrderSection(
                         modifier = Modifier
-                            .fillMaxSize()
+                            .fillMaxWidth()
                             .padding(vertical = 16.dp),
                         noteOrder = state.noteOrder,
                         onOrderChange = {
